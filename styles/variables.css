@@ -1,1 +1,29 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Шрифты */
+  --main-font: "Inter-Variable", sans-serif;
+  --action-font: "PressStart2P-Regular", sans-serif;
+  --wght: 410;
+  --slnt: 0;
+
+  /* Цвета */
+  --bg-image:
+    repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(#d3d3d3, transparent 2px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  --tx-color: rgba(0, 0, 0, 1);
+  --border-color: rgba(0, 0, 0, 1);
+  --label-stroke-color: rgba(255, 255, 255, 1);
+  --like-bg-color: rgba(0, 0, 0, 1);
+  --tx-color-diff: rgba(255, 255, 255, 1);
+  --bg-color-diff: rgba(255, 255, 255, 1);
+  --contour-color: rgba(0, 0, 0, 1);
+  --animation-fill-color: rgba(255, 0, 0, 1);
+
+  /* Размеры */
+  --container-width: clamp(375px, 260.57px + 30.52vw, 700px);
+  --padding-card-title: 4px 10px;
+  --font-weight-text: 400;
+  --font-size-card: 18px;
+  --font-size-button: 14px;
+  --font-size-label: 14px;
+}
