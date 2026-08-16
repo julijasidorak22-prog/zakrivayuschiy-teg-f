@@ -65,7 +65,7 @@
 }
 
 .card__title_type_bold {
-  --wght: 710;
+  --wght: 715;
 }
 
 .text-container {
@@ -95,6 +95,9 @@
 .image__cards {
   width: 100%;
   display: block;
+}
+
+.border-wrapper {
   border-top: 2px solid var(--border-color);
   border-bottom: 2px solid var(--border-color);
 }
@@ -105,13 +108,6 @@
   justify-content: flex-end;
   padding: 25px;
   gap: 7px;
-}
-
-.card__icon-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
 }
 
 .card__like-button {
@@ -285,6 +281,10 @@
 }
 
 .card__icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
   outline: 2px solid transparent;
   transition: outline-color 0.3s ease;
   padding: 5px 3.5px;
@@ -375,4 +375,62 @@
 
 .like-icon.is-liked .sparks {
   animation: spark-flash 0.3s ease-in 0.3s 1;
+}
+
+.support {
+  animation: filter-image-sprint2 3s linear infinite;
+}
+
+.fatigue {
+  filter: invert(0.7);
+}
+
+.movement {
+  filter: grayscale(1);
+}
+
+.movement:hover {
+  filter: none;
+}
+
+.expectation {
+  filter: brightness(0.4) contrast(1.1);
+}
+
+.resourcefulness {
+  animation: blurAnimation 2s infinite alternate;
+}
+
+.doubt {
+  filter: opacity(1);
+  transition: filter 5s ease;
+}
+
+.doubt:hover {
+  filter: opacity(0);
+  transition: 5s ease;
+}
+
+.bewilderment {
+  filter: contrast(100%);
+  transition: 3s ease;
+}
+
+.bewilderment:hover {
+  filter: contrast(180%);
+  transition: 3s ease;
+}
+
+.meticulousness-wrapper {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 20%,
+    #ffffff 40%,
+    #ffffff 100%
+  );
+}
+
+.meticulousness {
+  filter: drop-shadow(5px 15px 3px rgba(0, 0, 0, 0.8));
 }

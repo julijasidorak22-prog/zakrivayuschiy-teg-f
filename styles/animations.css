@@ -26,3 +26,18 @@
     opacity: 1;
   }
 }
+
+@keyframes filter-image-sprint2 {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes blurAnimation {
+  0% {
+    filter: brightness(60%) blur(0px);
+  }
+  100% {
+    filter: brightness(20%) blur(10px);
+  }
+}
