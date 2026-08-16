@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
@@ -21,18 +21,22 @@
       </div>
     </header>
     <main class="main">
-      <article class="container cards">
+      <article class="container">
         <h3 class="card__title card__title_type_bold">
           Фритрек и нулевой спринт: Подготовка к работе
         </h3>
         <div class="card__labels">
-          <div class="border-wrapper">
-            <img
-              class="image__cards expectation"
-              src="./images/image-1.jpg"
-              alt="Рабочий стол с монитором, на экране надпись 'inspire', клавиатура, чашка кофе и суккулент"
-              loading="lazy"
-            />
+          <div class="border__wrapper">
+            <picture>
+              <source srcset="./images/image-1.avif" type="image/avif" />
+              <source srcset="./images/image-1.webp" type="image/webp" />
+              <img
+                class="image__cards expectation"
+                src="./images/image-1.jpg"
+                alt="Рабочий стол с монитором, на экране надпись 'inspire', клавиатура, чашка кофе и суккулент"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <span class="card__label">&lt;Ожидание&gt;</span>
         </div>
@@ -62,6 +66,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -92,18 +97,21 @@
           </button>
         </div>
       </article>
-      <article class="container cards">
+      <article class="container">
         <h3 class="card__title card__title_type_bold">
           1 спринт: Я — чистый лист
         </h3>
         <div class="card__labels">
-          <div class="border-wrapper">
-            <img
-              class="image__cards bewilderment"
-              src="./images/Kitten.gif"
-              alt="Маленький котенок мяукает"
-              loading="lazy"
-            />
+          <div class="border__wrapper">
+            <picture>
+              <source srcset="./images/Kitten.webp" type="image/webp" />
+              <img
+                class="image__cards bewilderment"
+                src="./images/Kitten.gif"
+                alt="Маленький котенок мяукает"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <span class="card__label">&lt;Растерянность&gt;</span>
         </div>
@@ -135,6 +143,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -165,18 +174,21 @@
           </button>
         </div>
       </article>
-      <article class="container cards">
+      <article class="container">
         <h3 class="card__title card__title_type_bold">
           1 спринт: А если не получится?
         </h3>
         <div class="card__labels">
-          <div class="border-wrapper">
-            <img
-              class="image__cards doubt"
-              src="./images/Think.gif"
-              alt="Мультяшный персонаж задумчиво подпирает подбородок рукой"
-              loading="lazy"
-            />
+          <div class="border__wrapper">
+            <picture>
+              <source srcset="./images/Think.webp" type="image/webp" />
+              <img
+                class="image__cards doubt"
+                src="./images/Think.gif"
+                alt="Мультяшный персонаж задумчиво подпирает подбородок рукой"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <span class="card__label">&lt;Сомнение&gt;</span>
         </div>
@@ -205,6 +217,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -235,19 +248,22 @@
           </button>
         </div>
       </article>
-      <article class="container cards">
+      <article class="container">
         <h3 class="card__title card__title_type_bold">
           2 спринт: Погоня за идеалом
         </h3>
         <div class="card__labels">
           <div class="meticulousness-wrapper">
-            <div class="border-wrapper">
-              <img
-                class="image__cards meticulousness"
-                src="./images/free-png.png"
-                alt="Иллюстрация: студент с ноутбуком сидит среди книг и что-то сосредоточенно пишет"
-                loading="lazy"
-              />
+            <div class="border__wrapper">
+              <picture>
+                <source srcset="./images/free-png.webp" type="image/webp" />
+                <img
+                  class="image__cards meticulousness"
+                  src="./images/free-png.png"
+                  alt="Иллюстрация: студент с ноутбуком сидит среди книг и что-то сосредоточенно пишет"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
           <span class="card__label">&lt;Дотошность&gt;</span>
@@ -281,6 +297,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -311,12 +328,12 @@
           </button>
         </div>
       </article>
-      <article class="container cards">
+      <article class="container">
         <h3 class="card__title card__title_type_bold">
           2 спринт: О тех, кто рядом
         </h3>
         <div class="card__labels">
-          <div class="border-wrapper">
+          <div class="border__wrapper">
             <img
               class="image__cards support"
               src="./images/hold_me.gif"
@@ -355,6 +372,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -385,12 +403,12 @@
           </button>
         </div>
       </article>
-      <article class="container cards">
+      <article class="container">
         <h3 class="card__title card__title_type_bold">
           3 спринт: Обходные стратегии
         </h3>
         <div class="card__labels">
-          <div class="border-wrapper">
+          <div class="border__wrapper">
             <img
               class="image__cards resourcefulness"
               src="./images/illustration.gif"
@@ -426,6 +444,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -456,12 +475,12 @@
           </button>
         </div>
       </article>
-      <article class="container cards">
+      <article class="container">
         <h3 class="card__title card__title_type_bold">
           3 спринт: Когда опускаются руки
         </h3>
         <div class="card__labels">
-          <div class="border-wrapper">
+          <div class="border__wrapper">
             <img
               class="image__cards fatigue"
               src="./images/Tired_Crawl.gif"
@@ -499,6 +518,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -529,16 +549,19 @@
           </button>
         </div>
       </article>
-      <article class="container cards">
+      <article class="container">
         <h3 class="card__title card__title_type_bold">«Сейчас я здесь»</h3>
         <div class="card__labels">
-          <div class="border-wrapper">
-            <img
-              class="image__cards movement"
-              src="./images/art-static.webp"
-              alt="Человек стоит на вершине заснеженной горы над облаками и видит перел собой гору еще выше"
-              loading="lazy"
-            />
+          <div class="border__wrapper">
+            <picture>
+              <source srcset="./images/art-static.avif" type="image/avif" />
+              <img
+                class="image__cards movement"
+                src="./images/art-static.webp"
+                alt="Человек стоит на вершине заснеженной горы над облаками и видит перел собой гору еще выше"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <span class="card__label">&lt;Движение&gt;</span>
         </div>
@@ -571,6 +594,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -608,14 +632,14 @@
           onclick="window['dialog'].showModal()"
           aria-controls="dialog"
         >
-          <svg class="save__button-icon" viewBox="0 0 28 28">
+          <svg class="save__button-icon" viewBox="0 0 28 28" aria-hidden="true">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
       </div>
       <dialog class="dialog" id="dialog">
-        <svg class="dialog__icon" width="39" height="39">
+        <svg class="dialog__icon" width="39" height="39" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy" width="39" height="39"></use>
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
