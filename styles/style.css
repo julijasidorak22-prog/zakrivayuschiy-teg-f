@@ -245,7 +245,7 @@
 }
 
 .dialog__button {
-  height: 38px;
+  block-size: 38px;
   grid-area: button;
   position: relative;
 }
