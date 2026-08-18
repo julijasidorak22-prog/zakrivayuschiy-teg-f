@@ -111,19 +111,13 @@
   align-items: center;
   justify-content: flex-end;
   padding: 25px;
-  gap: 7px;
 }
 
 .card__like-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   padding: 25px;
   align-self: flex-end;
   gap: 12px;
-  position: relative;
+  background-color: transparent;
 }
 
 .button__text {
@@ -136,36 +130,22 @@
   color: var(--tx-color-diff);
 }
 
-.like-icon {
-  inline-size: 27px;
-  block-size: 24px;
-}
-
 .button__like {
   padding: 10.5px 35px;
   inline-size: 130px;
   block-size: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: var(--border-color) 2px solid;
 }
 
 .save__button-container {
   align-self: center;
+  padding-bottom: 100px;
 }
 
 .save__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 8px;
   background-color: rgba(255, 255, 255, 1);
-  border: 2px solid var(--border-color);
   block-size: 55px;
   inline-size: 335px;
-  cursor: pointer;
-  position: relative;
 }
 
 .save__button-icon {
@@ -214,8 +194,8 @@
 .dialog {
   display: none;
   border: 2px solid var(--border-color);
-  padding: 30px 40px;
-  max-inline-size: 341px;
+  padding: 30px;
+  max-inline-size: 353px;
 }
 
 .dialog[open] {
@@ -244,10 +224,14 @@
   align-self: center;
 }
 
+.dialog__form {
+  grid-area: button;
+}
+
 .dialog__button {
   block-size: 38px;
-  grid-area: button;
-  position: relative;
+  inline-size: 100%;
+  background-color: transparent;
 }
 
 .dialog__icon {
@@ -267,17 +251,24 @@
     inline-size: 28px;
     block-size: 28px;
   }
+
+  .dialog {
+    max-inline-size: 341px;
+    padding: 30px 40px;
+  }
 }
 
-.card__like-button,
-.save__button,
-.dialog__button {
+.button {
   transition: box-shadow 0.3s ease;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.card__like-button:focus-visible,
-.save__button:focus-visible,
-.dialog__button:focus-visible {
+.button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--border-color);
 }
@@ -289,7 +280,9 @@
   display: flex;
   outline: 2px solid transparent;
   transition: outline-color 0.3s ease;
-  padding: 5px 3.5px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .card__icon-button:focus {
@@ -300,9 +293,7 @@
   outline-color: var(--border-color);
 }
 
-.card__like-button:after,
-.save__button:after,
-.dialog__button:after {
+.button:after {
   content: "";
   position: absolute;
   inset: 0;
@@ -312,9 +303,7 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.card__like-button:hover:after,
-.save__button:hover:after,
-.dialog__button:hover:after {
+.button:hover:after {
   transform: scaleX(1);
 }
 

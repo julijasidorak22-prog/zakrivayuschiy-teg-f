@@ -16,15 +16,15 @@
   <body class="page">
     <header class="header">
       <div class="container header__container">
-        <h1 class="header__title">&lt;/HTML&gt;</h1>
-        <h2 class="header__subtitle">Закрывающий тег</h2>
+        <p class="header__title">&lt;/HTML&gt;</p>
+        <h1 class="header__subtitle">Закрывающий тег</h1>
       </div>
     </header>
     <main class="main">
       <article class="container">
-        <h3 class="card__title card__title_type_bold">
+        <h2 class="card__title card__title_type_bold">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        </h2>
         <div class="card__labels">
           <div class="border__wrapper">
             <picture>
@@ -92,15 +92,15 @@
               </g>
             </svg>
           </button>
-          <button class="card__like-button button__like" type="button">
+          <button class="button card__like-button button__like" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <article class="container">
-        <h3 class="card__title card__title_type_bold">
+        <h2 class="card__title card__title_type_bold">
           1 спринт: Я — чистый лист
-        </h3>
+        </h2>
         <div class="card__labels">
           <div class="border__wrapper">
             <img
@@ -166,15 +166,15 @@
               </g>
             </svg>
           </button>
-          <button class="card__like-button button__like" type="button">
+          <button class="button card__like-button button__like" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <article class="container">
-        <h3 class="card__title card__title_type_bold">
+        <h2 class="card__title card__title_type_bold">
           1 спринт: А если не получится?
-        </h3>
+        </h2>
         <div class="card__labels">
           <div class="border__wrapper">
             <img
@@ -237,15 +237,15 @@
               </g>
             </svg>
           </button>
-          <button class="card__like-button button__like" type="button">
+          <button class="button card__like-button button__like" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <article class="container">
-        <h3 class="card__title card__title_type_bold">
+        <h2 class="card__title card__title_type_bold">
           2 спринт: Погоня за идеалом
-        </h3>
+        </h2>
         <div class="card__labels">
           <div class="meticulousness-wrapper">
             <div class="border__wrapper">
@@ -317,15 +317,15 @@
               </g>
             </svg>
           </button>
-          <button class="card__like-button button__like" type="button">
+          <button class="button card__like-button button__like" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <article class="container">
-        <h3 class="card__title card__title_type_bold">
+        <h2 class="card__title card__title_type_bold">
           2 спринт: О тех, кто рядом
-        </h3>
+        </h2>
         <div class="card__labels">
           <div class="border__wrapper">
             <img
@@ -392,15 +392,15 @@
               </g>
             </svg>
           </button>
-          <button class="card__like-button button__like" type="button">
+          <button class="button card__like-button button__like" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <article class="container">
-        <h3 class="card__title card__title_type_bold">
+        <h2 class="card__title card__title_type_bold">
           3 спринт: Обходные стратегии
-        </h3>
+        </h2>
         <div class="card__labels">
           <div class="border__wrapper">
             <img
@@ -464,15 +464,15 @@
               </g>
             </svg>
           </button>
-          <button class="card__like-button button__like" type="button">
+          <button class="button card__like-button button__like" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <article class="container">
-        <h3 class="card__title card__title_type_bold">
+        <h2 class="card__title card__title_type_bold">
           3 спринт: Когда опускаются руки
-        </h3>
+        </h2>
         <div class="card__labels">
           <div class="border__wrapper">
             <img
@@ -538,13 +538,13 @@
               </g>
             </svg>
           </button>
-          <button class="card__like-button button__like" type="button">
+          <button class="button card__like-button button__like" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <article class="container">
-        <h3 class="card__title card__title_type_bold">«Сейчас я здесь»</h3>
+        <h2 class="card__title card__title_type_bold">«Сейчас я здесь»</h2>
         <div class="card__labels">
           <div class="border__wrapper">
             <picture>
@@ -614,14 +614,14 @@
               </g>
             </svg>
           </button>
-          <button class="card__like-button button__like" type="button">
+          <button class="button card__like-button button__like" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
       <div class="save__button-container">
         <button
-          class="save__button"
+          class="button save__button"
           type="button"
           onclick="window['dialog'].showModal()"
           aria-controls="dialog"
@@ -637,13 +637,11 @@
           <use href="./svg/floppy.svg#floppy" width="39" height="39"></use>
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        <button
-          class="dialog__button"
-          type="button"
-          onclick="window['dialog'].close()"
-        >
-          <span class="button__text">ОК</span>
-        </button>
+        <form class="dialog__form" method="dialog">
+          <button class="button dialog__button" type="submit">
+            <span class="button__text">ОК</span>
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>

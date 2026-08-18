@@ -1,15 +1,15 @@
 :root {
   /* Шрифты */
   --main-font: "Inter-Variable", sans-serif;
-  --action-font: "PressStart2P-Regular", sans-serif;
+  --action-font: "PressStart2P", fantasy;
   --wght: 410;
   --slnt: 0;
 
   /* Цвета */
   --bg-image:
-    repeating-linear-gradient(90deg, #d3d3d3 0 1px, transparent 1px 2px),
-    repeating-linear-gradient(#d3d3d3 0 1px, transparent 1px 2px),
-    linear-gradient(#e7e7e7, #1a1a1a);
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --bg-color: #1a1a1a;
   --tx-color: rgba(0, 0, 0, 1);
   --border-color: rgba(0, 0, 0, 1);
